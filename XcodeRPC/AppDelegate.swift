@@ -7,15 +7,18 @@
 //
 
 import Cocoa
+import ScriptingBridge
+import SwordRPC
 
 @NSApplicationMain
-class AppDelegate: NSObject, NSApplicationDelegate {
+class AppDelegate: NSObject, NSApplicationDelegate{
 
     @IBOutlet weak var window: NSWindow!
-
+    
+    var rpc: XcodeRPC?
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        // Insert code here to initialize your application
+        rpc = XcodeRPC()
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
