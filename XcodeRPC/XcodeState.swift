@@ -15,8 +15,12 @@ class XcodeState {
         if let workspace = xcodeApp.activeWorkspaceDocument {
             self.activeWorkspaceName = workspace.name
             
-            if let scheme = workspace.activeScheme {
-                self.activeSchemeName = scheme.name
+            if let loaded = workspace.loaded {
+                if loaded, let scheme = workspace.activeScheme {
+                    self.activeSchemeName = scheme.name
+                }
+                
+                self.workspaceLoaded = loaded
             }
         }
         for var windowObject in xcodeApp.windows!() {
@@ -82,11 +86,14 @@ class XcodeState {
     }
     
     // current scheme name
-    var activeSchemeName: String?;
+    var activeSchemeName: String?
+    
+    // is the current workspace loaded
+    var workspaceLoaded: Bool?
     
     // current workspace title
-    var activeWorkspaceName: String?;
+    var activeWorkspaceName: String?
     
     // frontmost window title
-    var activeWindowTitle: String?;
+    var activeWindowTitle: String?
 }

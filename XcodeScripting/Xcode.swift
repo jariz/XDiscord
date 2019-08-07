@@ -671,6 +671,7 @@ extension SBObject: XcodeSourceDocument {}
 
 // MARK: XcodeWorkspaceDocument
 @objc public protocol XcodeWorkspaceDocument: XcodeDocument {
+    @objc optional var loaded: Bool { get } // Is the attribute optional?
     @objc optional func breakpoints() -> SBElementArray
     @objc optional func buildMessages() -> SBElementArray
     @objc optional func fileBreakpoints() -> SBElementArray
