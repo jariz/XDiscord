@@ -1,6 +1,6 @@
 <img src="https://jari.lol/ZPuuGrnTBA.png" align="right">
 
-# XcodeRPC
+# XDiscord
 Xcode Discord Integration.
 
 ## Displays active:
