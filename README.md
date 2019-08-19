@@ -20,6 +20,15 @@ Get the [latest .DMG here.](https://github.com/jariz/XcodeRPC/releases/latest)
 
 Coming soon once app goes stable.
 
+## Installation 
+
+- Drag the app into your Applications folder. (this is required, it will not function otherwise)
+- Go to System Preferences > Extensions
+- Click 'xcode editor' in the list that shows up.
+- Check the box next to 'XDiscord Extension'
+- Launch Xcode, and rich presence should start showing up in your Discord client.  
+   XDiscord can now be configured by going to Editor > XDiscord > Preferences from Xcode itself.
+
 ## Development
 
 ### AssetRenderer
