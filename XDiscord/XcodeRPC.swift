@@ -70,6 +70,14 @@ class XcodeRPC: SBApplicationDelegate, SwordRPCDelegate {
             guard let app = self.xcodeApp else {
                 return
             }
+            
+            if !app.isRunning {
+                print("ERROR: xcode appears to not be running (anymore?), quitting...")
+                self.timer?.invalidate()
+                NSApplication.shared.terminate(nil)
+                return
+            }
+            
             let newState = XcodeState(app)
             
             if self.state != nil

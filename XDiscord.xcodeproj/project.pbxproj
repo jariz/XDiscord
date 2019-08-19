@@ -10,6 +10,12 @@
 		492D21D022F8AC6F0076738C /* ScriptingUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492D21CD22F8AC420076738C /* ScriptingUtilities.swift */; };
 		492D21D222F8BFA10076738C /* XcodeRPC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492D21D122F8BFA10076738C /* XcodeRPC.swift */; };
 		492D21D422F8BFC10076738C /* XcodeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492D21D322F8BFC10076738C /* XcodeState.swift */; };
+		49382A7522FB5F96005A7722 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49CC82DD22F77E8300070807 /* Cocoa.framework */; };
+		49382A7822FB5F96005A7722 /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49382A7722FB5F96005A7722 /* SourceEditorExtension.swift */; };
+		49382A7A22FB5F97005A7722 /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49382A7922FB5F97005A7722 /* SourceEditorCommand.swift */; };
+		49382A7F22FB5F97005A7722 /* XDiscord Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 49382A7422FB5F96005A7722 /* XDiscord Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		49382A8422FB71FD005A7722 /* Window.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49382A8322FB71FD005A7722 /* Window.xib */; };
+		49382A8622FB7340005A7722 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49382A8522FB7340005A7722 /* WindowController.swift */; };
 		493F18E022F96E5A00F18A99 /* String+djb2hash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493F18DF22F96E5A00F18A99 /* String+djb2hash.swift */; };
 		493F18E122F96EBF00F18A99 /* String+djb2hash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493F18DF22F96E5A00F18A99 /* String+djb2hash.swift */; };
 		494EFBB322F785D50002B303 /* XcodeScripting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A1727C22F7823F00CFC916 /* XcodeScripting.swift */; };
@@ -21,6 +27,16 @@
 		D1E532493F5BF07738FA0E4A /* Pods_XcodeRPC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3529773839C863B38BBC68 /* Pods_XcodeRPC.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		49382A7D22FB5F97005A7722 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49CC82BE22F77E4800070807 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49382A7322FB5F96005A7722;
+			remoteInfo = Extension;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		49EC45C222F8485E007347AD /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -28,6 +44,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				49382A7F22FB5F97005A7722 /* XDiscord Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -48,6 +65,13 @@
 		492D21CD22F8AC420076738C /* ScriptingUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptingUtilities.swift; sourceTree = "<group>"; };
 		492D21D122F8BFA10076738C /* XcodeRPC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcodeRPC.swift; sourceTree = "<group>"; };
 		492D21D322F8BFC10076738C /* XcodeState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcodeState.swift; sourceTree = "<group>"; };
+		49382A7422FB5F96005A7722 /* XDiscord Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "XDiscord Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		49382A7722FB5F96005A7722 /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
+		49382A7922FB5F97005A7722 /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
+		49382A7B22FB5F97005A7722 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49382A7C22FB5F97005A7722 /* Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Extension.entitlements; sourceTree = "<group>"; };
+		49382A8322FB71FD005A7722 /* Window.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Window.xib; sourceTree = "<group>"; };
+		49382A8522FB7340005A7722 /* WindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
 		493F18DF22F96E5A00F18A99 /* String+djb2hash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+djb2hash.swift"; sourceTree = "<group>"; };
 		49A1727922F7823F00CFC916 /* XcodeScripting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XcodeScripting.h; path = "../../../../Downloads/SwiftScripting-master/Frameworks/XcodeScripting/XcodeScripting/XcodeScripting.h"; sourceTree = "<group>"; };
 		49A1727A22F7823F00CFC916 /* Xcode.sdef */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Xcode.sdef; sourceTree = "<group>"; };
@@ -55,14 +79,15 @@
 		49A1727C22F7823F00CFC916 /* XcodeScripting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XcodeScripting.swift; sourceTree = "<group>"; };
 		49A1727D22F7823F00CFC916 /* Xcode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Xcode.swift; sourceTree = "<group>"; };
 		49CC82DD22F77E8300070807 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		49EAEBB722F78570000CA815 /* XcodeRPC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XcodeRPC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		49EAEBB722F78570000CA815 /* XDiscord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XDiscord.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49EAEBB922F78570000CA815 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49EAEBBB22F78572000CA815 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49EAEBBE22F78572000CA815 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		49EAEBC022F78572000CA815 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		49EAEBC122F78572000CA815 /* XcodeRPC.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XcodeRPC.entitlements; sourceTree = "<group>"; };
+		49EAEBC122F78572000CA815 /* XDiscord.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XDiscord.entitlements; sourceTree = "<group>"; };
 		49EC45C922F86615007347AD /* AssetRenderer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AssetRenderer; sourceTree = BUILT_PRODUCTS_DIR; };
 		49EC45CB22F86615007347AD /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		49F7D53523020B500038B7D1 /* XDiscord-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XDiscord-Bridging-Header.h"; sourceTree = "<group>"; };
 		6561A32B3884DA9AB59B8D3E /* Pods-XcodeRPC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XcodeRPC.debug.xcconfig"; path = "Target Support Files/Pods-XcodeRPC/Pods-XcodeRPC.debug.xcconfig"; sourceTree = "<group>"; };
 		6BC2739FAA42A559644DA6D5 /* Pods-XcodeRPC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XcodeRPC.release.xcconfig"; path = "Target Support Files/Pods-XcodeRPC/Pods-XcodeRPC.release.xcconfig"; sourceTree = "<group>"; };
 		6DA53195B8A2C99FE7CD4AB5 /* Pods-XcodeDiscord.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XcodeDiscord.release.xcconfig"; path = "Target Support Files/Pods-XcodeDiscord/Pods-XcodeDiscord.release.xcconfig"; sourceTree = "<group>"; };
@@ -71,6 +96,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		49382A7122FB5F96005A7722 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49382A7522FB5F96005A7722 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		49EAEBB422F78570000CA815 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -89,6 +122,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		49382A7622FB5F96005A7722 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				49382A7722FB5F96005A7722 /* SourceEditorExtension.swift */,
+				49382A7922FB5F97005A7722 /* SourceEditorCommand.swift */,
+				49382A7B22FB5F97005A7722 /* Info.plist */,
+				49382A7C22FB5F97005A7722 /* Extension.entitlements */,
+				49382A8322FB71FD005A7722 /* Window.xib */,
+				49382A8522FB7340005A7722 /* WindowController.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		493F18DE22F96E3800F18A99 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,8 +161,9 @@
 			children = (
 				493F18DE22F96E3800F18A99 /* Extensions */,
 				49A1727122F7821B00CFC916 /* XcodeScripting */,
-				49EAEBB822F78570000CA815 /* XcodeRPC */,
+				49EAEBB822F78570000CA815 /* XDiscord */,
 				49EC45CA22F86615007347AD /* AssetRenderer */,
+				49382A7622FB5F96005A7722 /* Extension */,
 				49CC82DC22F77E8300070807 /* Frameworks */,
 				49CC82C722F77E4900070807 /* Products */,
 				4ACF65C00A2E90BCFEC5A203 /* Pods */,
@@ -126,8 +173,9 @@
 		49CC82C722F77E4900070807 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				49EAEBB722F78570000CA815 /* XcodeRPC.app */,
+				49EAEBB722F78570000CA815 /* XDiscord.app */,
 				49EC45C922F86615007347AD /* AssetRenderer */,
+				49382A7422FB5F96005A7722 /* XDiscord Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -142,18 +190,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		49EAEBB822F78570000CA815 /* XcodeRPC */ = {
+		49EAEBB822F78570000CA815 /* XDiscord */ = {
 			isa = PBXGroup;
 			children = (
 				49EAEBB922F78570000CA815 /* AppDelegate.swift */,
 				49EAEBBB22F78572000CA815 /* Assets.xcassets */,
 				49EAEBBD22F78572000CA815 /* MainMenu.xib */,
 				49EAEBC022F78572000CA815 /* Info.plist */,
-				49EAEBC122F78572000CA815 /* XcodeRPC.entitlements */,
+				49EAEBC122F78572000CA815 /* XDiscord.entitlements */,
 				492D21D122F8BFA10076738C /* XcodeRPC.swift */,
 				492D21D322F8BFC10076738C /* XcodeState.swift */,
+				49F7D53523020B500038B7D1 /* XDiscord-Bridging-Header.h */,
 			);
-			path = XcodeRPC;
+			path = XDiscord;
 			sourceTree = "<group>";
 		};
 		49EC45CA22F86615007347AD /* AssetRenderer */ = {
@@ -178,9 +227,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		49EAEBB622F78570000CA815 /* XcodeRPC */ = {
+		49382A7322FB5F96005A7722 /* XDiscord Extension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 49EAEBC222F78572000CA815 /* Build configuration list for PBXNativeTarget "XcodeRPC" */;
+			buildConfigurationList = 49382A8222FB5F97005A7722 /* Build configuration list for PBXNativeTarget "XDiscord Extension" */;
+			buildPhases = (
+				49382A7022FB5F96005A7722 /* Sources */,
+				49382A7122FB5F96005A7722 /* Frameworks */,
+				49382A7222FB5F96005A7722 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "XDiscord Extension";
+			productName = Extension;
+			productReference = 49382A7422FB5F96005A7722 /* XDiscord Extension.appex */;
+			productType = "com.apple.product-type.xcode-extension";
+		};
+		49EAEBB622F78570000CA815 /* XDiscord */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49EAEBC222F78572000CA815 /* Build configuration list for PBXNativeTarget "XDiscord" */;
 			buildPhases = (
 				E4DF6EB3708B4FB5F6B2218F /* [CP] Check Pods Manifest.lock */,
 				49EAEBB322F78570000CA815 /* Sources */,
@@ -192,10 +258,11 @@
 			buildRules = (
 			);
 			dependencies = (
+				49382A7E22FB5F97005A7722 /* PBXTargetDependency */,
 			);
-			name = XcodeRPC;
+			name = XDiscord;
 			productName = XcodeRPC;
-			productReference = 49EAEBB722F78570000CA815 /* XcodeRPC.app */;
+			productReference = 49EAEBB722F78570000CA815 /* XDiscord.app */;
 			productType = "com.apple.product-type.application";
 		};
 		49EC45C822F86615007347AD /* AssetRenderer */ = {
@@ -221,14 +288,28 @@
 		49CC82BE22F77E4800070807 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1010;
+				LastSwiftUpdateCheck = 1030;
 				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = JARI.IO;
 				TargetAttributes = {
+					49382A7322FB5F96005A7722 = {
+						CreatedOnToolsVersion = 10.3;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.Mac = {
+								enabled = 1;
+							};
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
 					49EAEBB622F78570000CA815 = {
 						CreatedOnToolsVersion = 10.1;
-						LastSwiftMigration = 1100;
+						LastSwiftMigration = 1030;
 						SystemCapabilities = {
+							com.apple.ApplicationGroups.Mac = {
+								enabled = 1;
+							};
 							com.apple.HardenedRuntime = {
 								enabled = 0;
 							};
@@ -243,7 +324,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 49CC82C122F77E4800070807 /* Build configuration list for PBXProject "XcodeRPC" */;
+			buildConfigurationList = 49CC82C122F77E4800070807 /* Build configuration list for PBXProject "XDiscord" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -256,13 +337,22 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				49EAEBB622F78570000CA815 /* XcodeRPC */,
+				49EAEBB622F78570000CA815 /* XDiscord */,
 				49EC45C822F86615007347AD /* AssetRenderer */,
+				49382A7322FB5F96005A7722 /* XDiscord Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		49382A7222FB5F96005A7722 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49382A8422FB71FD005A7722 /* Window.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		49EAEBB522F78570000CA815 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -317,6 +407,16 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		49382A7022FB5F96005A7722 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49382A7822FB5F96005A7722 /* SourceEditorExtension.swift in Sources */,
+				49382A8622FB7340005A7722 /* WindowController.swift in Sources */,
+				49382A7A22FB5F97005A7722 /* SourceEditorCommand.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		49EAEBB322F78570000CA815 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -342,6 +442,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		49382A7E22FB5F97005A7722 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49382A7322FB5F96005A7722 /* XDiscord Extension */;
+			targetProxy = 49382A7D22FB5F97005A7722 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		49EAEBBD22F78572000CA815 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
@@ -354,6 +462,50 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		49382A8022FB5F97005A7722 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Extension/Extension.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = JHKDY4UQ72;
+				INFOPLIST_FILE = Extension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.jari.XDiscord.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		49382A8122FB5F97005A7722 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Extension/Extension.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = JHKDY4UQ72;
+				INFOPLIST_FILE = Extension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.jari.XDiscord.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		49CC82D222F77E4900070807 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -475,18 +627,22 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = XcodeRPC/XcodeRPC.entitlements;
-				CODE_SIGN_IDENTITY = "-";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = XDiscord/XDiscord.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = E72CQ4L7EE;
-				INFOPLIST_FILE = XcodeRPC/Info.plist;
+				DEVELOPMENT_TEAM = JHKDY4UQ72;
+				INFOPLIST_FILE = XDiscord/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.jari.XcodeRPC3;
+				PRODUCT_BUNDLE_IDENTIFIER = io.jari.XDiscord;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "XDiscord/XDiscord-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -497,18 +653,21 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = XcodeRPC/XcodeRPC.entitlements;
-				CODE_SIGN_IDENTITY = "-";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = XDiscord/XDiscord.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = E72CQ4L7EE;
-				INFOPLIST_FILE = XcodeRPC/Info.plist;
+				DEVELOPMENT_TEAM = JHKDY4UQ72;
+				INFOPLIST_FILE = XDiscord/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.jari.XcodeRPC3;
+				PRODUCT_BUNDLE_IDENTIFIER = io.jari.XDiscord;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "XDiscord/XDiscord-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -538,7 +697,16 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		49CC82C122F77E4800070807 /* Build configuration list for PBXProject "XcodeRPC" */ = {
+		49382A8222FB5F97005A7722 /* Build configuration list for PBXNativeTarget "XDiscord Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49382A8022FB5F97005A7722 /* Debug */,
+				49382A8122FB5F97005A7722 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49CC82C122F77E4800070807 /* Build configuration list for PBXProject "XDiscord" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				49CC82D222F77E4900070807 /* Debug */,
@@ -547,7 +715,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		49EAEBC222F78572000CA815 /* Build configuration list for PBXNativeTarget "XcodeRPC" */ = {
+		49EAEBC222F78572000CA815 /* Build configuration list for PBXNativeTarget "XDiscord" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				49EAEBC322F78572000CA815 /* Debug */,
