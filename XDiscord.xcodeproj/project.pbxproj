@@ -24,7 +24,7 @@
 		49EAEBBC22F78572000CA815 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49EAEBBB22F78572000CA815 /* Assets.xcassets */; };
 		49EAEBBF22F78572000CA815 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49EAEBBD22F78572000CA815 /* MainMenu.xib */; };
 		49EC45CC22F86615007347AD /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EC45CB22F86615007347AD /* main.swift */; };
-		D1E532493F5BF07738FA0E4A /* Pods_XcodeRPC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3529773839C863B38BBC68 /* Pods_XcodeRPC.framework */; };
+		B847AC20F301587615F9B5FF /* Pods_XDiscord.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C661FCB03967DB8FE511D5F8 /* Pods_XDiscord.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +61,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		03BA23409ABA90262488F3EE /* Pods-XDiscord.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XDiscord.release.xcconfig"; path = "Target Support Files/Pods-XDiscord/Pods-XDiscord.release.xcconfig"; sourceTree = "<group>"; };
 		25568CA33DE90D565A5339CE /* Pods-XcodeDiscord.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XcodeDiscord.debug.xcconfig"; path = "Target Support Files/Pods-XcodeDiscord/Pods-XcodeDiscord.debug.xcconfig"; sourceTree = "<group>"; };
 		492D21CD22F8AC420076738C /* ScriptingUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptingUtilities.swift; sourceTree = "<group>"; };
 		492D21D122F8BFA10076738C /* XcodeRPC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcodeRPC.swift; sourceTree = "<group>"; };
@@ -91,8 +92,9 @@
 		6561A32B3884DA9AB59B8D3E /* Pods-XcodeRPC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XcodeRPC.debug.xcconfig"; path = "Target Support Files/Pods-XcodeRPC/Pods-XcodeRPC.debug.xcconfig"; sourceTree = "<group>"; };
 		6BC2739FAA42A559644DA6D5 /* Pods-XcodeRPC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XcodeRPC.release.xcconfig"; path = "Target Support Files/Pods-XcodeRPC/Pods-XcodeRPC.release.xcconfig"; sourceTree = "<group>"; };
 		6DA53195B8A2C99FE7CD4AB5 /* Pods-XcodeDiscord.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XcodeDiscord.release.xcconfig"; path = "Target Support Files/Pods-XcodeDiscord/Pods-XcodeDiscord.release.xcconfig"; sourceTree = "<group>"; };
+		C661FCB03967DB8FE511D5F8 /* Pods_XDiscord.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XDiscord.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9CBA644084AD0DF6BC1F5FA /* Pods_XcodeDiscord.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XcodeDiscord.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA3529773839C863B38BBC68 /* Pods_XcodeRPC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XcodeRPC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F27B3879D08740C711547BB0 /* Pods-XDiscord.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XDiscord.debug.xcconfig"; path = "Target Support Files/Pods-XDiscord/Pods-XDiscord.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1E532493F5BF07738FA0E4A /* Pods_XcodeRPC.framework in Frameworks */,
+				B847AC20F301587615F9B5FF /* Pods_XDiscord.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,7 +187,7 @@
 			children = (
 				49CC82DD22F77E8300070807 /* Cocoa.framework */,
 				D9CBA644084AD0DF6BC1F5FA /* Pods_XcodeDiscord.framework */,
-				FA3529773839C863B38BBC68 /* Pods_XcodeRPC.framework */,
+				C661FCB03967DB8FE511D5F8 /* Pods_XDiscord.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -220,6 +222,8 @@
 				6DA53195B8A2C99FE7CD4AB5 /* Pods-XcodeDiscord.release.xcconfig */,
 				6561A32B3884DA9AB59B8D3E /* Pods-XcodeRPC.debug.xcconfig */,
 				6BC2739FAA42A559644DA6D5 /* Pods-XcodeRPC.release.xcconfig */,
+				F27B3879D08740C711547BB0 /* Pods-XDiscord.debug.xcconfig */,
+				03BA23409ABA90262488F3EE /* Pods-XDiscord.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -371,15 +375,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-XcodeRPC/Pods-XcodeRPC-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-XDiscord/Pods-XDiscord-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-XcodeRPC/Pods-XcodeRPC-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-XDiscord/Pods-XDiscord-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-XcodeRPC/Pods-XcodeRPC-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-XDiscord/Pods-XDiscord-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E4DF6EB3708B4FB5F6B2218F /* [CP] Check Pods Manifest.lock */ = {
@@ -397,7 +401,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-XcodeRPC-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-XDiscord-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -469,7 +473,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = JHKDY4UQ72;
+				DEVELOPMENT_TEAM = 7J8FJX4SRX;
 				INFOPLIST_FILE = Extension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -491,7 +495,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = JHKDY4UQ72;
+				DEVELOPMENT_TEAM = 7J8FJX4SRX;
 				INFOPLIST_FILE = Extension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -623,7 +627,7 @@
 		};
 		49EAEBC322F78572000CA815 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6561A32B3884DA9AB59B8D3E /* Pods-XcodeRPC.debug.xcconfig */;
+			baseConfigurationReference = F27B3879D08740C711547BB0 /* Pods-XDiscord.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -632,7 +636,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = JHKDY4UQ72;
+				DEVELOPMENT_TEAM = 7J8FJX4SRX;
 				INFOPLIST_FILE = XDiscord/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -649,7 +653,7 @@
 		};
 		49EAEBC422F78572000CA815 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6BC2739FAA42A559644DA6D5 /* Pods-XcodeRPC.release.xcconfig */;
+			baseConfigurationReference = 03BA23409ABA90262488F3EE /* Pods-XDiscord.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -658,7 +662,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = JHKDY4UQ72;
+				DEVELOPMENT_TEAM = 7J8FJX4SRX;
 				INFOPLIST_FILE = XDiscord/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -677,7 +681,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = E72CQ4L7EE;
+				DEVELOPMENT_TEAM = 7J8FJX4SRX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -688,7 +692,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = E72CQ4L7EE;
+				DEVELOPMENT_TEAM = 7J8FJX4SRX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};

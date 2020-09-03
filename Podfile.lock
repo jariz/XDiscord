@@ -7,7 +7,7 @@ DEPENDENCIES:
   - SwordRPC
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - BlueSocket
     - SwordRPC
 
@@ -15,6 +15,6 @@ SPEC CHECKSUMS:
   BlueSocket: 184ff448002475bfb5d676286c2458da5d971f47
   SwordRPC: 7ed51064ea9e61c3c6833cf9de90a8be0ab36653
 
-PODFILE CHECKSUM: 39207e6662566bc6eab4c6d2c51e993d0af248a5
+PODFILE CHECKSUM: 906fba06d1cf776b2c0bc501fb8f6cd44435b5f5
 
-COCOAPODS: 1.7.5
+COCOAPODS: 1.9.3
